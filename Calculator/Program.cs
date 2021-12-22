@@ -17,22 +17,13 @@ namespace Calculator
             try
             {
                 Console.WriteLine("Podaj pierwszą liczbę.");
-
-
                 var number1 = GetInput();
-
-
                 Console.WriteLine("Jaką operację chcesz wykonać? Możliwe operacje to '+', '-', '/', '*'.");
-
                 var action = Console.ReadLine();
                 Console.WriteLine("Podaj drugą liczbę.");
                 var number2 = GetInput();
-
                 var result = Calculate(number1, number2, action);
-
-
-                Console.WriteLine("Wynik: " + result);
-                
+                Console.WriteLine("Wynik: " + result);                
             }
             catch(Exception ex)
             {
